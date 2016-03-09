@@ -1,9 +1,17 @@
 {
+    "autoload": {
+        "psr-4": {
+            "aEscarcha\\UdemyApiClient\\": "src/aEscarcha/UdemyApiClient/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "~5.0"
+
+    },
     "require-dev": {
         "phpspec/phpspec": "~2.0"
     },
     "config": {
         "bin-dir": "bin"
-    },
-    "autoload": {"psr-0": {"": "src"}}
+    }
 }
