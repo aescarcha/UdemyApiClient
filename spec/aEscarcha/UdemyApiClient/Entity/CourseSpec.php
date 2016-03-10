@@ -14,7 +14,7 @@ class CourseSpec extends ObjectBehavior
 
     function it_is_created_from_json()
     {
-        $this->beConstructedWith($this->detailJson);
+        $this->beConstructedWith(json_decode($this->detailJson));
         $this->getId()->shouldBe(674764);
         $this->getTitle()->shouldBe('Curso completo do desenvolvedor web HTML5, CSS3 e JavaScript');
         $this->getUrl()->shouldBe('/curso-html5-css3-javascript/');

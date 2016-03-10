@@ -19,8 +19,7 @@ class Course
     public function __construct($argument1 = null)
     {
         if($argument1){
-            $data = json_decode( $argument1 );
-            foreach ($data as $key => $value) {
+            foreach ($argument1 as $key => $value) {
                 $setter = 'set' . self::camelCase( $key );
                 if( method_exists($this, $setter)  ){
                     $this->$setter( $value );
