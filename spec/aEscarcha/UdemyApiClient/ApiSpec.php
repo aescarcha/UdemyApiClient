@@ -25,6 +25,7 @@ class ApiSpec extends ObjectBehavior
     {
         $response = new Response(200, [], Stream::factory($this->getCourseResponse));
         $client->get('/api-2.0/courses/674764')->willReturn($response);
+        $client->setDefaultOption("auth", "MTIzNDo1Njc4")->shouldBeCalled();
         $this->beConstructedWith('1234', '5678', $client);
         $result = $this->getUrl( '/api-2.0/courses/674764' )->shouldReturnAnInstanceOf( 'aEscarcha\UdemyApiClient\Entity\Course' );
     }

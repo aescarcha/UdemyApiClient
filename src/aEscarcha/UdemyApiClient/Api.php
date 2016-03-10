@@ -97,6 +97,7 @@ class Api
 
     public function setClient( \GuzzleHttp\ClientInterface $client )
     {
+        $client->setDefaultOption('auth', base64_encode($this->getClientId() . ':' . $this->getClientSecret()));
         $this->client = $client;
         return $this;
     }
