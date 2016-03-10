@@ -1,10 +1,22 @@
 {
+    "name": "aescarcha/udemy-api-client",
+    "type": "library",
+    "description": "Client for interacting with Udemy 2.0 API",
+    "keywords": ["udemy","php"],
+    "authors": [
+        {
+            "name": "Alvaro",
+            "email": "alvaro.escarcha@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "aEscarcha\\UdemyApiClient\\": "src/aEscarcha/UdemyApiClient/"
         }
     },
     "require": {
+        "php": ">=5.4.0",
         "guzzlehttp/guzzle": "~5.0"
 
     },

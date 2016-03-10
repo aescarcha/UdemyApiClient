@@ -15,13 +15,18 @@ class CourseSpec extends ObjectBehavior
     function it_is_created_from_json()
     {
         $this->beConstructedWith($this->detailJson);
-        $this->getId()->shouldBe('674764');
+        $this->getId()->shouldBe(674764);
         $this->getTitle()->shouldBe('Curso completo do desenvolvedor web HTML5, CSS3 e JavaScript');
         $this->getUrl()->shouldBe('/curso-html5-css3-javascript/');
         $this->getIsPaid()->shouldBe(true);
         $this->getPrice()->shouldBe(224);
         $this->getImage()->shouldBe('https://udemy-images.udemy.com/course/125_H/674764_f980_6.jpg');
         $this->getDescription()->shouldContain('Aprenda em um curso completo HTML5, CSS3 e JavaScript com os');
+        $this->getAvgRating()->shouldBe(4.58203);
+        $this->getNumReviews()->shouldBe(128);
+        $this->getLocale()->shouldBe('pt_BR');
+        $this->getPrimaryCategory()->shouldBe('Development');
+        $this->getPrimarySubcategory()->shouldBe('Web Development');
     }
 
     protected $detailJson = '{
