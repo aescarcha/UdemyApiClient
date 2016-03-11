@@ -35,7 +35,7 @@ class Api
     public function getUrl($url)
     {
         try {
-            $result = $this->getClient()->get('/api-2.0/courses/674764');
+            $result = $this->getClient()->get($url);
         } catch (RequestException $e) {
             return false;
         }

@@ -15,6 +15,7 @@ class Course
     protected $numReviews;
     protected $primaryCategory;
     protected $primarySubcategory;
+    protected $locale;
 
     public function __construct($argument1 = null)
     {
