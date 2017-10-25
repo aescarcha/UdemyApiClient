@@ -14,6 +14,7 @@ Add to composer require
     
 Run composer update
 
-#Usage:
+## Usage:
+
     $api = new Api('clientId', 'clientSecret');
     $course = $api->getUrl( 'http://www.udemy.com/api-2.0/courses/1');
