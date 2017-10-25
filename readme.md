@@ -2,7 +2,8 @@
 
 This is a PHP Udemy api client to handle connection with Udemy 2.0 API, atm it only parses course details requests, it may grow in the future, or may not. Feel free to contribute.
 
-#Install
+## Install
+
 Add to composer require
 
     {
